@@ -1,0 +1,27 @@
+# Build output
+target/
+build/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+.gradle/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Logs and runtime files
+*.log
+logs/
+*.db
+*.mv.db
+*.trace.db
+
+# Local environment and secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
