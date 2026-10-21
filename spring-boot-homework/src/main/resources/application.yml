@@ -1,3 +1,10 @@
 spring:
   application:
     name: events
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
