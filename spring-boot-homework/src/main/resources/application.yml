@@ -3,8 +3,23 @@ spring:
     name: events
   jpa:
     open-in-view: false
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
     properties:
       hibernate:
         default_batch_fetch_size: 100
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          events-client:
+            registration:
+              client-id: events-client
+              client-authentication-methods: none
+              authorization-grant-types: authorization_code
+              redirect-uris: https://oauth.pstmn.io/v1/callback
+            require-proof-key: true
+            require-authorization-consent: false
+            token:
+              access-token-time-to-live: 15m

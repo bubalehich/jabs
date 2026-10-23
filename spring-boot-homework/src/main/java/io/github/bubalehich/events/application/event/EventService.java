@@ -9,6 +9,7 @@ import io.github.bubalehich.events.domain.event.EventId;
 import io.github.bubalehich.events.domain.event.EventRepository;
 import io.github.bubalehich.events.domain.event.EventTitle;
 import io.github.bubalehich.events.domain.event.exception.EventNotFoundException;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,15 +18,11 @@ import java.util.UUID;
 
 @Service
 @Transactional
+@RequiredArgsConstructor
 public class EventService {
 
 	private final EventRepository events;
 	private final Clock clock;
-
-	public EventService(EventRepository events, Clock clock) {
-		this.events = events;
-		this.clock = clock;
-	}
 
 	public Event create(EventDetailsCommand command) {
 		Event event = Event.schedule(new EventTitle(command.title()), command.startsAt(),
@@ -58,12 +55,10 @@ public class EventService {
 		events.delete(eventId);
 	}
 
-	public Email register(UUID id, String participantEmail) {
+	public void register(UUID id, String participantEmail) {
 		Event event = load(new EventId(id));
-		Email participant = new Email(participantEmail);
-		event.register(participant, clock.instant());
+		event.register(new Email(participantEmail), clock.instant());
 		events.save(event);
-		return participant;
 	}
 
 	public void cancelRegistration(UUID id, String participantEmail) {

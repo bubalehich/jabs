@@ -2,15 +2,15 @@ package io.github.bubalehich.events.interfaces.rest;
 
 import io.github.bubalehich.events.application.event.EventService;
 import io.github.bubalehich.events.domain.common.PageQuery;
-import io.github.bubalehich.events.domain.event.Email;
 import io.github.bubalehich.events.domain.event.Event;
 import io.github.bubalehich.events.interfaces.rest.dto.EventRequest;
 import io.github.bubalehich.events.interfaces.rest.dto.EventResponse;
 import io.github.bubalehich.events.interfaces.rest.dto.PageResponse;
-import io.github.bubalehich.events.interfaces.rest.dto.RegistrationRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,17 +24,15 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.security.Principal;
 import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/events")
+@RequiredArgsConstructor
 public class EventController {
 
 	private final EventService eventService;
-
-	public EventController(EventService eventService) {
-		this.eventService = eventService;
-	}
 
 	@PostMapping
 	public ResponseEntity<EventResponse> create(@Valid @RequestBody EventRequest request) {
@@ -70,18 +68,14 @@ public class EventController {
 	}
 
 	@PostMapping("/{id}/registrations")
-	public ResponseEntity<Void> register(@PathVariable UUID id, @Valid @RequestBody RegistrationRequest request) {
-		Email participant = eventService.register(id, request.email());
-		URI location = ServletUriComponentsBuilder.fromCurrentRequest()
-				.path("/{email}")
-				.buildAndExpand(participant.value())
-				.toUri();
-		return ResponseEntity.created(location).build();
+	public ResponseEntity<Void> register(@PathVariable UUID id, Principal participant) {
+		eventService.register(id, participant.getName());
+		return ResponseEntity.status(HttpStatus.CREATED).build();
 	}
 
-	@DeleteMapping("/{id}/registrations/{email}")
-	public ResponseEntity<Void> cancelRegistration(@PathVariable UUID id, @PathVariable String email) {
-		eventService.cancelRegistration(id, email);
+	@DeleteMapping("/{id}/registrations/me")
+	public ResponseEntity<Void> cancelRegistration(@PathVariable UUID id, Principal participant) {
+		eventService.cancelRegistration(id, participant.getName());
 		return ResponseEntity.noContent().build();
 	}
 

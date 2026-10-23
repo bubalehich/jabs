@@ -5,6 +5,7 @@ import io.github.bubalehich.events.domain.common.PageResult;
 import io.github.bubalehich.events.domain.event.Event;
 import io.github.bubalehich.events.domain.event.EventId;
 import io.github.bubalehich.events.domain.event.EventRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -13,15 +14,12 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
+@RequiredArgsConstructor
 class JpaEventRepository implements EventRepository {
 
 	private static final Sort BY_START_TIME = Sort.by("startsAt", "id");
 
 	private final SpringDataEventRepository springData;
-
-	JpaEventRepository(SpringDataEventRepository springData) {
-		this.springData = springData;
-	}
 
 	@Override
 	public Optional<Event> findById(EventId id) {

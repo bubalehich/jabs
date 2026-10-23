@@ -8,6 +8,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Table;
 import jakarta.persistence.Version;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.Instant;
 import java.util.LinkedHashSet;
@@ -16,17 +20,22 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "events")
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 class EventJpaEntity {
 
 	@Id
 	private UUID id;
 
+	@Setter
 	@Column(nullable = false, length = 200)
 	private String title;
 
+	@Setter
 	@Column(name = "starts_at", nullable = false)
 	private Instant startsAt;
 
+	@Setter
 	@Column(nullable = false)
 	private int capacity;
 
@@ -38,43 +47,8 @@ class EventJpaEntity {
 	@Version
 	private Long version;
 
-	protected EventJpaEntity() {
-	}
-
 	EventJpaEntity(UUID id) {
 		this.id = id;
-	}
-
-	UUID getId() {
-		return id;
-	}
-
-	String getTitle() {
-		return title;
-	}
-
-	void setTitle(String title) {
-		this.title = title;
-	}
-
-	Instant getStartsAt() {
-		return startsAt;
-	}
-
-	void setStartsAt(Instant startsAt) {
-		this.startsAt = startsAt;
-	}
-
-	int getCapacity() {
-		return capacity;
-	}
-
-	void setCapacity(int capacity) {
-		this.capacity = capacity;
-	}
-
-	Set<String> getParticipants() {
-		return participants;
 	}
 
 }
