@@ -3,9 +3,5 @@ spring:
     url: jdbc:postgresql://localhost:${DB_PORT:5432}/events_dev
     username: ${DB_USERNAME:events}
     password: ${DB_PASSWORD:events}
-  jpa:
-    hibernate:
-      ddl-auto: update
-  sql:
-    init:
-      mode: always
+  flyway:
+    locations: classpath:db/migration, classpath:db/demo

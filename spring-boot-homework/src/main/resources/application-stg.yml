@@ -5,12 +5,6 @@ spring:
     password: ${DB_PASSWORD}
     hikari:
       maximum-pool-size: 10
-  jpa:
-    hibernate:
-      ddl-auto: validate
-  sql:
-    init:
-      mode: never
   security:
     oauth2:
       authorizationserver:
