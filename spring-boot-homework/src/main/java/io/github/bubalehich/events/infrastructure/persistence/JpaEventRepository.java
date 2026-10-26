@@ -11,6 +11,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Repository;
 
+import java.time.Instant;
 import java.util.Optional;
 
 @Repository
@@ -44,6 +45,11 @@ class JpaEventRepository implements EventRepository {
 	@Override
 	public void delete(EventId id) {
 		springData.deleteById(id.value());
+	}
+
+	@Override
+	public long countStartingAfter(Instant moment) {
+		return springData.countByStartsAtAfter(moment);
 	}
 
 }

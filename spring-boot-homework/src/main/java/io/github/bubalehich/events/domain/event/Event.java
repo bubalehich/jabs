@@ -1,5 +1,6 @@
 package io.github.bubalehich.events.domain.event;
 
+import io.github.bubalehich.events.domain.common.DomainEvent;
 import io.github.bubalehich.events.domain.event.exception.AlreadyRegisteredException;
 import io.github.bubalehich.events.domain.event.exception.CapacityBelowRegistrationsException;
 import io.github.bubalehich.events.domain.event.exception.EventAlreadyStartedException;
@@ -8,9 +9,11 @@ import io.github.bubalehich.events.domain.event.exception.InvalidEventDataExcept
 import io.github.bubalehich.events.domain.event.exception.RegistrationNotFoundException;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -21,6 +24,7 @@ public class Event {
 	private Instant startsAt;
 	private Capacity capacity;
 	private final Set<Email> participants;
+	private final List<DomainEvent> domainEvents = new ArrayList<>();
 
 	private Event(EventId id, EventTitle title, Instant startsAt, Capacity capacity, Collection<Email> participants) {
 		this.id = Objects.requireNonNull(id);
@@ -32,7 +36,9 @@ public class Event {
 
 	public static Event schedule(EventTitle title, Instant startsAt, Capacity capacity, Instant now) {
 		requireStartInFuture(startsAt, now);
-		return new Event(EventId.newId(), title, startsAt, capacity, Set.of());
+		Event event = new Event(EventId.newId(), title, startsAt, capacity, Set.of());
+		event.domainEvents.add(new EventScheduled(event.id, now));
+		return event;
 	}
 
 	public static Event restore(EventId id, EventTitle title, Instant startsAt, Capacity capacity,
@@ -60,6 +66,7 @@ public class Event {
 			throw new EventFullException(id);
 		}
 		participants.add(participant);
+		domainEvents.add(new ParticipantRegistered(id, participant, now));
 	}
 
 	public void cancelRegistration(Email participant, Instant now) {
@@ -67,6 +74,7 @@ public class Event {
 		if (!participants.remove(participant)) {
 			throw new RegistrationNotFoundException(id, participant);
 		}
+		domainEvents.add(new RegistrationCancelled(id, participant, now));
 	}
 
 	public boolean hasStarted(Instant now) {
@@ -95,6 +103,12 @@ public class Event {
 
 	public Set<Email> participants() {
 		return Collections.unmodifiableSet(participants);
+	}
+
+	public List<DomainEvent> pullDomainEvents() {
+		List<DomainEvent> pulled = List.copyOf(domainEvents);
+		domainEvents.clear();
+		return pulled;
 	}
 
 	private void requireNotStarted(Instant now) {

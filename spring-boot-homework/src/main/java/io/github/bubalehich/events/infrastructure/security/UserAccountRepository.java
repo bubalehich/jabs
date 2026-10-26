@@ -9,4 +9,6 @@ interface UserAccountRepository extends JpaRepository<UserAccountJpaEntity, UUID
 
 	Optional<UserAccountJpaEntity> findByEmail(String email);
 
+	long countByRole(Role role);
+
 }

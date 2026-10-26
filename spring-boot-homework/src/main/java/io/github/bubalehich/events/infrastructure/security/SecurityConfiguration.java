@@ -1,5 +1,6 @@
 package io.github.bubalehich.events.infrastructure.security;
 
+import org.springframework.boot.security.autoconfigure.actuate.web.servlet.EndpointRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -37,16 +38,25 @@ public class SecurityConfiguration {
 						.requestMatchers(HttpMethod.GET, "/api/events/**").hasAnyRole("USER", "ADMIN")
 						.requestMatchers("/api/events/*/registrations/**").hasAnyRole("USER", "ADMIN")
 						.requestMatchers("/api/events/**").hasRole("ADMIN")
-						.anyRequest().denyAll())
-				.oauth2ResourceServer(resourceServer -> resourceServer
-						.jwt(jwt -> jwt.jwtAuthenticationConverter(rolesAuthenticationConverter())))
-				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-				.csrf(csrf -> csrf.disable());
+						.anyRequest().denyAll());
+		acceptBearerTokens(http);
 		return http.build();
 	}
 
 	@Bean
 	@Order(3)
+	public SecurityFilterChain actuatorFilterChain(HttpSecurity http) {
+		http
+				.securityMatcher(EndpointRequest.toAnyEndpoint())
+				.authorizeHttpRequests(requests -> requests
+						.requestMatchers(EndpointRequest.to("health", "prometheus")).permitAll()
+						.anyRequest().hasRole("ADMIN"));
+		acceptBearerTokens(http);
+		return http.build();
+	}
+
+	@Bean
+	@Order(4)
 	public SecurityFilterChain loginFilterChain(HttpSecurity http) {
 		http
 				.authorizeHttpRequests(requests -> requests.anyRequest().authenticated())
@@ -57,6 +67,14 @@ public class SecurityConfiguration {
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+	}
+
+	private static void acceptBearerTokens(HttpSecurity http) {
+		http
+				.oauth2ResourceServer(resourceServer -> resourceServer
+						.jwt(jwt -> jwt.jwtAuthenticationConverter(rolesAuthenticationConverter())))
+				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+				.csrf(csrf -> csrf.disable());
 	}
 
 	private static JwtAuthenticationConverter rolesAuthenticationConverter() {

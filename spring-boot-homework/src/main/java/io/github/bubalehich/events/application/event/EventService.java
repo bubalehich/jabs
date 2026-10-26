@@ -10,6 +10,7 @@ import io.github.bubalehich.events.domain.event.EventRepository;
 import io.github.bubalehich.events.domain.event.EventTitle;
 import io.github.bubalehich.events.domain.event.exception.EventNotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,11 +24,12 @@ public class EventService {
 
 	private final EventRepository events;
 	private final Clock clock;
+	private final ApplicationEventPublisher publisher;
 
 	public Event create(EventDetailsCommand command) {
 		Event event = Event.schedule(new EventTitle(command.title()), command.startsAt(),
 				new Capacity(command.capacity()), clock.instant());
-		events.save(event);
+		save(event);
 		return event;
 	}
 
@@ -45,7 +47,7 @@ public class EventService {
 		Event event = load(new EventId(id));
 		event.update(new EventTitle(command.title()), command.startsAt(), new Capacity(command.capacity()),
 				clock.instant());
-		events.save(event);
+		save(event);
 		return event;
 	}
 
@@ -58,17 +60,22 @@ public class EventService {
 	public void register(UUID id, String participantEmail) {
 		Event event = load(new EventId(id));
 		event.register(new Email(participantEmail), clock.instant());
-		events.save(event);
+		save(event);
 	}
 
 	public void cancelRegistration(UUID id, String participantEmail) {
 		Event event = load(new EventId(id));
 		event.cancelRegistration(new Email(participantEmail), clock.instant());
-		events.save(event);
+		save(event);
 	}
 
 	private Event load(EventId id) {
 		return events.findById(id).orElseThrow(() -> new EventNotFoundException(id));
+	}
+
+	private void save(Event event) {
+		events.save(event);
+		event.pullDomainEvents().forEach(publisher::publishEvent);
 	}
 
 }
