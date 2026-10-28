@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 20
+  security:
+    oauth2:
+      authorizationserver:
+        issuer: ${ISSUER_URI}
+
+logging:
+  level:
+    root: warn
+    io.github.bubalehich.events: info

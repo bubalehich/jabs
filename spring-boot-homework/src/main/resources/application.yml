@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: events
+  profiles:
+    default: local
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          events-client:
+            registration:
+              client-id: events-client
+              client-authentication-methods: none
+              authorization-grant-types: authorization_code
+              redirect-uris: https://oauth.pstmn.io/v1/callback
+            require-proof-key: true
+            require-authorization-consent: false
+            token:
+              access-token-time-to-live: 15m
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus, metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+      roles: ADMIN
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState, db, signingKey
+  metrics:
+    tags:
+      application: ${spring.application.name}
