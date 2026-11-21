@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package ping;
+
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "io.github.bubalehich.ping.api";
+
+service PingService {
+  rpc Ping(PingRequest) returns (PongResponse);
+}
+
+message PingRequest {
+  string message = 1;
+  string client = 2;
+}
+
+message PongResponse {
+  string message = 1;
+  google.protobuf.Timestamp timestamp = 2;
+}
