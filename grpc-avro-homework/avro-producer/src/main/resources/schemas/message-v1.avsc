@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "Message",
+  "namespace": "io.github.bubalehich.avro",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "text", "type": "string"}
+  ]
+}
