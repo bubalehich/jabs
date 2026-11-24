@@ -1,0 +1,223 @@
+{
+  "count": 90,
+  "page": 3,
+  "first": 61,
+  "last": 90,
+  "hits": 30,
+  "carrier": 0,
+  "pageCount": 3,
+  "Items": [
+    {
+      "itemName": "Soccer Water Bottle",
+      "itemCode": "sports-shop:03001",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03001/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Basketball Water Bottle",
+      "itemCode": "sports-shop:03002",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03002/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Tennis Water Bottle",
+      "itemCode": "sports-shop:03003",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03003/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Baseball Water Bottle",
+      "itemCode": "sports-shop:03004",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03004/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Volleyball Water Bottle",
+      "itemCode": "sports-shop:03005",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03005/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Badminton Water Bottle",
+      "itemCode": "sports-shop:03006",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03006/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Table Tennis Water Bottle",
+      "itemCode": "sports-shop:03007",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03007/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Golf Water Bottle",
+      "itemCode": "sports-shop:03008",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03008/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Running Water Bottle",
+      "itemCode": "sports-shop:03009",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03009/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Swimming Water Bottle",
+      "itemCode": "sports-shop:03010",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03010/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Yoga Water Bottle",
+      "itemCode": "sports-shop:03011",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03011/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Boxing Water Bottle",
+      "itemCode": "sports-shop:03012",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03012/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Cycling Water Bottle",
+      "itemCode": "sports-shop:03013",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03013/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Hiking Water Bottle",
+      "itemCode": "sports-shop:03014",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03014/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Skiing Water Bottle",
+      "itemCode": "sports-shop:03015",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03015/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Snowboarding Water Bottle",
+      "itemCode": "sports-shop:03016",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03016/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Skateboarding Water Bottle",
+      "itemCode": "sports-shop:03017",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03017/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Surfing Water Bottle",
+      "itemCode": "sports-shop:03018",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03018/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Climbing Water Bottle",
+      "itemCode": "sports-shop:03019",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03019/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Fitness Water Bottle",
+      "itemCode": "sports-shop:03020",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03020/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Rugby Water Bottle",
+      "itemCode": "sports-shop:03021",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03021/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Hockey Water Bottle",
+      "itemCode": "sports-shop:03022",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03022/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Karate Water Bottle",
+      "itemCode": "sports-shop:03023",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03023/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Judo Water Bottle",
+      "itemCode": "sports-shop:03024",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03024/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Fishing Water Bottle",
+      "itemCode": "sports-shop:03025",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03025/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Camping Water Bottle",
+      "itemCode": "sports-shop:03026",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03026/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Dance Water Bottle",
+      "itemCode": "sports-shop:03027",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03027/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Gymnastics Water Bottle",
+      "itemCode": "sports-shop:03028",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03028/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Handball Water Bottle",
+      "itemCode": "sports-shop:03029",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03029/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Cricket Water Bottle",
+      "itemCode": "sports-shop:03030",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/03030/",
+      "shopName": "Sports Shop"
+    }
+  ],
+  "GenreInformation": [],
+  "TagInformation": []
+}

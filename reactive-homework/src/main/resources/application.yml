@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: reactive-sports
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/sports
+    username: sports
+    password: sports
+  sql:
+    init:
+      mode: always
+
+rakuten:
+  base-url: ${RAKUTEN_BASE_URL:http://localhost:8089}
+  application-id: ${RAKUTEN_APPLICATION_ID:mock-application-id}
+  access-key: ${RAKUTEN_ACCESS_KEY:mock-access-key}
+  keyword: sport
+  hits-per-page: 30
+  pages: 3
