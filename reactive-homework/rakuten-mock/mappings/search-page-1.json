@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/ichibams/api/IchibaItem/Search/20220601",
+    "headers": {
+      "accessKey": {
+        "matches": ".+"
+      }
+    },
+    "queryParameters": {
+      "applicationId": {
+        "matches": ".+"
+      },
+      "keyword": {
+        "equalTo": "sport"
+      },
+      "page": {
+        "equalTo": "1"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8"
+    },
+    "bodyFileName": "search-page-1.json"
+  }
+}

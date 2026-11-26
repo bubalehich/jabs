@@ -1,0 +1,223 @@
+{
+  "count": 90,
+  "page": 2,
+  "first": 31,
+  "last": 60,
+  "hits": 30,
+  "carrier": 0,
+  "pageCount": 3,
+  "Items": [
+    {
+      "itemName": "Soccer Sports Bag",
+      "itemCode": "sports-shop:02001",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02001/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Basketball Sports Bag",
+      "itemCode": "sports-shop:02002",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02002/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Tennis Sports Bag",
+      "itemCode": "sports-shop:02003",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02003/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Baseball Sports Bag",
+      "itemCode": "sports-shop:02004",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02004/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Volleyball Sports Bag",
+      "itemCode": "sports-shop:02005",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02005/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Badminton Sports Bag",
+      "itemCode": "sports-shop:02006",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02006/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Table Tennis Sports Bag",
+      "itemCode": "sports-shop:02007",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02007/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Golf Sports Bag",
+      "itemCode": "sports-shop:02008",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02008/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Running Sports Bag",
+      "itemCode": "sports-shop:02009",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02009/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Swimming Sports Bag",
+      "itemCode": "sports-shop:02010",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02010/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Yoga Sports Bag",
+      "itemCode": "sports-shop:02011",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02011/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Boxing Sports Bag",
+      "itemCode": "sports-shop:02012",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02012/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Cycling Sports Bag",
+      "itemCode": "sports-shop:02013",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02013/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Hiking Sports Bag",
+      "itemCode": "sports-shop:02014",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02014/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Skiing Sports Bag",
+      "itemCode": "sports-shop:02015",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02015/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Snowboarding Sports Bag",
+      "itemCode": "sports-shop:02016",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02016/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Skateboarding Sports Bag",
+      "itemCode": "sports-shop:02017",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02017/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Surfing Sports Bag",
+      "itemCode": "sports-shop:02018",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02018/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Climbing Sports Bag",
+      "itemCode": "sports-shop:02019",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02019/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Fitness Sports Bag",
+      "itemCode": "sports-shop:02020",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02020/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Rugby Sports Bag",
+      "itemCode": "sports-shop:02021",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02021/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Hockey Sports Bag",
+      "itemCode": "sports-shop:02022",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02022/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Karate Sports Bag",
+      "itemCode": "sports-shop:02023",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02023/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Judo Sports Bag",
+      "itemCode": "sports-shop:02024",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02024/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Fishing Sports Bag",
+      "itemCode": "sports-shop:02025",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02025/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Camping Sports Bag",
+      "itemCode": "sports-shop:02026",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02026/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Dance Sports Bag",
+      "itemCode": "sports-shop:02027",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02027/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Gymnastics Sports Bag",
+      "itemCode": "sports-shop:02028",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02028/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Handball Sports Bag",
+      "itemCode": "sports-shop:02029",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02029/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Cricket Sports Bag",
+      "itemCode": "sports-shop:02030",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/02030/",
+      "shopName": "Sports Shop"
+    }
+  ],
+  "GenreInformation": [],
+  "TagInformation": []
+}

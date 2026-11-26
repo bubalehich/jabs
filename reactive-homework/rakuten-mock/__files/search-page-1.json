@@ -1,0 +1,223 @@
+{
+  "count": 90,
+  "page": 1,
+  "first": 1,
+  "last": 30,
+  "hits": 30,
+  "carrier": 0,
+  "pageCount": 3,
+  "Items": [
+    {
+      "itemName": "Soccer Training Shoes",
+      "itemCode": "sports-shop:01001",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01001/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Basketball Training Shoes",
+      "itemCode": "sports-shop:01002",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01002/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Tennis Training Shoes",
+      "itemCode": "sports-shop:01003",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01003/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Baseball Training Shoes",
+      "itemCode": "sports-shop:01004",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01004/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Volleyball Training Shoes",
+      "itemCode": "sports-shop:01005",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01005/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Badminton Training Shoes",
+      "itemCode": "sports-shop:01006",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01006/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Table Tennis Training Shoes",
+      "itemCode": "sports-shop:01007",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01007/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Golf Training Shoes",
+      "itemCode": "sports-shop:01008",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01008/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Running Training Shoes",
+      "itemCode": "sports-shop:01009",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01009/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Swimming Training Shoes",
+      "itemCode": "sports-shop:01010",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01010/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Yoga Training Shoes",
+      "itemCode": "sports-shop:01011",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01011/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Boxing Training Shoes",
+      "itemCode": "sports-shop:01012",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01012/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Cycling Training Shoes",
+      "itemCode": "sports-shop:01013",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01013/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Hiking Training Shoes",
+      "itemCode": "sports-shop:01014",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01014/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Skiing Training Shoes",
+      "itemCode": "sports-shop:01015",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01015/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Snowboarding Training Shoes",
+      "itemCode": "sports-shop:01016",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01016/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Skateboarding Training Shoes",
+      "itemCode": "sports-shop:01017",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01017/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Surfing Training Shoes",
+      "itemCode": "sports-shop:01018",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01018/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Climbing Training Shoes",
+      "itemCode": "sports-shop:01019",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01019/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Fitness Training Shoes",
+      "itemCode": "sports-shop:01020",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01020/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Rugby Training Shoes",
+      "itemCode": "sports-shop:01021",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01021/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Hockey Training Shoes",
+      "itemCode": "sports-shop:01022",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01022/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Karate Training Shoes",
+      "itemCode": "sports-shop:01023",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01023/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Judo Training Shoes",
+      "itemCode": "sports-shop:01024",
+      "itemPrice": 3980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01024/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Fishing Training Shoes",
+      "itemCode": "sports-shop:01025",
+      "itemPrice": 4480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01025/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Camping Training Shoes",
+      "itemCode": "sports-shop:01026",
+      "itemPrice": 4980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01026/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Dance Training Shoes",
+      "itemCode": "sports-shop:01027",
+      "itemPrice": 1980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01027/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Gymnastics Training Shoes",
+      "itemCode": "sports-shop:01028",
+      "itemPrice": 2480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01028/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Handball Training Shoes",
+      "itemCode": "sports-shop:01029",
+      "itemPrice": 2980,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01029/",
+      "shopName": "Sports Shop"
+    },
+    {
+      "itemName": "Cricket Training Shoes",
+      "itemCode": "sports-shop:01030",
+      "itemPrice": 3480,
+      "itemUrl": "https://item.rakuten.co.jp/sports-shop/01030/",
+      "shopName": "Sports Shop"
+    }
+  ],
+  "GenreInformation": [],
+  "TagInformation": []
+}
